@@ -7,7 +7,7 @@ const researchPapers = [
   {
     id: 1,
     title: "AI in Student Learning- Analyzing its effect on Critical Thinking and Academic Integrity",
-    authors: ["Micko", "Bryan", "Joshua","Torio"],
+    authors: ["Lucas", "Bryan", "Joshua","Torio"],
 
     year: "2024",
     abstract:
@@ -18,7 +18,7 @@ const researchPapers = [
   {
     id: 2,
     title: "Mirai Malware and Its Impact on IoT Security: Security",
-    authors: ["Micko", "Eustacy","Paglinawan"],
+    authors: ["Lucas", "Eustacy","Paglinawan"],
     year: "2024",
     abstract:
       "This research paper investigates the Mirai malware and its implications for IoT security. It analyzes the vulnerabilities exploited by Mirai, its propagation methods, and the resulting impact on IoT devices and networks...",
@@ -28,7 +28,7 @@ const researchPapers = [
   {
     id: 3,
     title: "CUSTOMER QUEUING TIME IN RETAIL STORES: A CASE STUDY IN SM HYPERMARKET - SMDC JAZZ MALL",
-    authors: ["Micko", "Ceanne","Ablat","Barrameda"],
+    authors: ["Lucas", "Ceanne","Ablat","Barrameda"],
     year: "2023",
     abstract:
       "This paper analyzes casualty trends in Customer queing time in retail stores particularly in SMDC Jazz Mall . It examines how these factors influence public perception and international response to the Customer queing Time...",
