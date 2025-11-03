@@ -22,7 +22,7 @@ const projects = [
     id: 2,
     title: "What’s Cooking?",
     description:
-      "“What’s Cooking?” is a recipe-sharing and food discovery web app designed to connect home cooks and food enthusiasts. Users can input available ingredients, and the app intelligently suggests a variety of dishes they can prepare. It encourages creativity in the kitchen, helps minimize food wasted and make your daily lives easy.",
+      "“What’s Cooking?” is a recipe-sharing and food discovery web app designed to connect home cooks and food enthusiasts. Users can input available ingredients, and the app intelligently suggests a variety of dishes they can prepare. It encourages creativity in the kitchen, helps minimize food wasted and make daily lives easy.",
     image: whatscookingImg,
     technologies: ["Laravel", "PHP", "Blade", "Authentication", "Routing", "MySQL", "Tailwind CSS"],
     githubUrl: "https://github.com/mickolucas/whatscooking.git",
@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     title: "My Favorite Dish",
     description:
-      "This was one of my earliest projects from The Odin Project, where I created a simple static webpage to showcase my favorite dish. The main objective was to understand the fundamentals of web development — learning how to structure content using HTML, apply styling through CSS, and organize elements effectively on a webpage.It served as a foundational steps developing my skills.",
+      "This was one of my earliest projects from The Odin Project, where I created a simple static webpage to showcase my favorite dish. The main objective was to understand the fundamentals of web development — learning how to structure content using HTML, apply styling through CSS, and organize elements effectively on a webpage.It served as a foundational steps developing skills.",
     image: dishImg,
     technologies: ["HTML", "CSS"],
     githubUrl: "https://github.com/mickolucas/odin-recipes.git",
