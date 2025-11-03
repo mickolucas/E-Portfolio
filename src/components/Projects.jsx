@@ -86,7 +86,8 @@ export function Projects() {
                     rel="noopener noreferrer"
                     className="flex-1"
                   >
-                    <Button size="sm" variant="outline" className="w-full mt-2.5 bg-transparent">
+                    <Button size="sm"className="w-full bg-blue-600 hover:bg-blue-700 mt-3 text-white">
+
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
@@ -100,7 +101,7 @@ export function Projects() {
                       rel="noopener noreferrer"
                       className="flex-1"
                     >
-                      <Button size="sm"className="w-full bg-blue-600 hover:bg-blue-700 mt-2.5 text-white"
+                    <Button size="sm"className="w-full bg-blue-600 hover:bg-blue-700 mt-3 text-white">
 >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
