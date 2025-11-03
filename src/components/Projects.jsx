@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     title: "Barangay Complaint System",
     description:
-      "The Barangay Complaint System is a web-based application designed to help residents of Sta. Cruz Barangay resident efficiently file, track, and resolve local complaints directly with their barangay officials. It streamlines communication, reduces paperwork, and enhances transparency within the barangay governance process.",
+      "The Barangay Complaint System is a web-based application designed to help residents of Sta. Cruz Barangay efficiently file, track, and resolve local complaints directly with their barangay officials. It streamlines communication, reduces paperwork, and enhances transparency within the barangay governance process.",
     image: complaintImg,
     technologies: ["Laravel", "Blade", "PHP", "Routing", "Authentication", "MySQL"],
     githubUrl: "https://github.com/mickolucas/Sta.Cruz-Complaint-System.git",
@@ -22,9 +22,9 @@ const projects = [
     id: 2,
     title: "What’s Cooking?",
     description:
-      "What’s Cooking? is a recipe-sharing and food discovery web app designed to connect home cooks and food enthusiasts. Users can input ingredient and the whats cooking app will give them a dishes that they can cook with it.",
+      "What’s Cooking? is a recipe-sharing and food discovery web app designed to connect home cooks and food enthusiasts. Users can input ingredients, and the app will give them dishes they can cook with it.",
     image: whatscookingImg,
-    technologies: ["Laravel", "PHP","Blade", "Authentication", "Routing"," MySQL","Tailwind CSS"],
+    technologies: ["Laravel", "PHP", "Blade", "Authentication", "Routing", "MySQL", "Tailwind CSS"],
     githubUrl: "https://github.com/mickolucas/whatscooking.git",
     liveUrl: "", // No live demo, so button will not appear
     featured: true,
@@ -53,18 +53,25 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <Card key={project.id} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
+            <Card
+              key={project.id}
+              className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg"
+            >
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
                   src={project.image || "/placeholder.svg"}
                   alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                {project.featured && <Badge className="absolute top-4 left-4 bg-blue-600">Featured</Badge>}
+                {project.featured && (
+                  <Badge className="absolute top-4 left-4 bg-blue-600">Featured</Badge>
+                )}
               </div>
 
               <CardHeader>
-                <CardTitle className="text-xl font-bold text-gray-900">{project.title}</CardTitle>
+                <CardTitle className="text-xl font-bold text-gray-900">
+                  {project.title}
+                </CardTitle>
               </CardHeader>
 
               <CardContent className="space-y-4">
@@ -78,16 +85,18 @@ export function Projects() {
                   ))}
                 </div>
 
-                <div className="flex gap-3 pt-4">
+                <div className="flex flex-col gap-3 pt-4">
                   {/* GitHub button */}
                   <a
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1"
                   >
-                    <Button size="sm"className="w-full bg-blue-600 hover:bg-blue-700 mt-3 text-white">
-
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="w-full text-blue-600 border-blue-600 hover:bg-blue-50"
+                    >
                       <Github className="mr-2 h-4 w-4" />
                       Code
                     </Button>
@@ -99,10 +108,11 @@ export function Projects() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1"
                     >
-                    <Button size="sm"className="w-full bg-blue-600 hover:bg-blue-700 mt-3 text-white">
->
+                      <Button
+                        size="sm"
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                      >
                         <ExternalLink className="mr-2 h-4 w-4" />
                         Live Demo
                       </Button>
