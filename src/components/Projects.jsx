@@ -6,7 +6,6 @@ import complaintImg from "../assets/complaint.png"
 import whatscookingImg from "../assets/whatscooking.png"
 import dishImg from "../assets/dish.png"
 
-
 const projects = [
   {
     id: 1,
@@ -27,7 +26,7 @@ const projects = [
     image: whatscookingImg,
     technologies: ["Laravel", "PHP","Blade", "Authentication", "Routing"," MySQL","Tailwind CSS"],
     githubUrl: "https://github.com/mickolucas/whatscooking.git",
-    liveUrl: "",
+    liveUrl: "", // No live demo, so button will not appear
     featured: true,
   },
   {
@@ -36,7 +35,7 @@ const projects = [
     description:
       "This was one of my first projects from The Odin Project, where I built a simple static webpage to showcase my favorite dish. The goal was to learn basic HTML structure, CSS styling, and how to organize content on a webpage.",
     image: dishImg,
-    technologies: ["HTML", "CSS",],
+    technologies: ["HTML", "CSS"],
     githubUrl: "https://github.com/mickolucas/odin-recipes.git",
     liveUrl: "https://gregarious-kitsune-95d56a.netlify.app/",
     featured: false,
@@ -45,7 +44,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-20 px-4  bg-blue-50">
+    <section id="projects" className="py-20 px-4 bg-blue-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">Featured Projects</h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-3xl mx-auto">
@@ -80,31 +79,34 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-3 pt-4">
-  <a
-    href={project.githubUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1"
-  >
-    <Button size="sm" variant="outline" className="w-full bg-transparent">
-      <Github className="mr-2 h-4 w-4" />
-      Code
-    </Button>
-  </a>
+                  {/* GitHub button */}
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1"
+                  >
+                    <Button size="sm" variant="outline" className="w-full bg-transparent">
+                      <Github className="mr-2 h-4 w-4" />
+                      Code
+                    </Button>
+                  </a>
 
-  <a
-    href={project.liveUrl}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex-1"
-  >
-    <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-      <ExternalLink className="mr-2 h-4 w-4" />
-      Live Demo
-    </Button>
-  </a>
-</div>
-
+                  {/* Conditionally show Live Demo button only if liveUrl exists */}
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1"
+                    >
+                      <Button size="sm" className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                        <ExternalLink className="mr-2 h-4 w-4" />
+                        Live Demo
+                      </Button>
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
