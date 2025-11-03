@@ -33,7 +33,7 @@ const projects = [
     id: 3,
     title: "My Favorite Dish",
     description:
-      "This was one of my earliest projects from The Odin Project, where I created a simple static webpage to showcase my favorite dish. The main objective was to understand the fundamentals of web development — learning how to structure content using HTML, apply styling through CSS, and organize elements effectively on a webpage.",
+      "This was one of my earliest projects from The Odin Project, where I created a simple static webpage to showcase my favorite dish. The main objective was to understand the fundamentals of web development — learning how to structure content using HTML, apply styling through CSS, and organize elements effectively on a webpage.It served as a foundational step in developing my skills in front-end design and layout.",
     image: dishImg,
     technologies: ["HTML", "CSS"],
     githubUrl: "https://github.com/mickolucas/odin-recipes.git",
